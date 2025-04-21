@@ -1,0 +1,30 @@
+@page
+@model LoginSystem.Pages.TestEmailModel
+@{
+    ViewData["Title"] = "Test Email";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mt-5">
+                <div class="card-body">
+                    <h2 class="card-title">Test Email Sending</h2>
+                    <form method="post">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Test Email</button>
+                    </form>
+                    @if (Model.Message != null)
+                    {
+                        <div class="alert @(Model.Success ? "alert-success" : "alert-danger") mt-3" role="alert">
+                            @Model.Message
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

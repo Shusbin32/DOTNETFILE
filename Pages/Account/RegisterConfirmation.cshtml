@@ -1,0 +1,27 @@
+@page
+@model LoginSystem.Pages.Account.RegisterConfirmationModel
+@{
+    ViewData["Title"] = "Register confirmation";
+}
+
+<div class="container">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card mt-5">
+                <div class="card-body text-center">
+                    <h1 class="card-title">@ViewData["Title"]</h1>
+                    <p>
+                        We've sent a confirmation email to <strong>@Model.Email</strong>.
+                        Please check your email and confirm your account to complete the registration process.
+                    </p>
+                    <p>
+                        If you don't see the email in your inbox, please check your spam folder.
+                    </p>
+                    <div class="mt-4">
+                        <a asp-page="./Login" class="btn btn-primary">Return to Login</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 
