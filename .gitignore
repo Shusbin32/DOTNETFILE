@@ -1,0 +1,48 @@
+# .NET Core specific ignores
+bin/
+obj/
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# Rider
+.idea/
+
+# User-specific files
+*.rsuser
+
+# Configuration files with sensitive data
+appsettings.json
+appsettings.Development.json
+appsettings.Production.json
+appsettings.*.json
+
+# Logs
+*.log
+logs/
+
+# Visual Studio Code
+.vscode/
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/ 
